@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+@theme {
+  --color-dark-navy: #0a0f1c;
+  --color-neon-blue: #00f0ff;
+  --color-neon-purple: #b026ff;
+  
+  --font-inter: "Inter", "Poppins", sans-serif;
+}
+
+body {
+  background-color: var(--color-dark-navy);
+  color: white;
+  font-family: var(--font-inter);
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.glow-hover:hover {
+  box-shadow: 0 0 20px rgba(176, 38, 255, 0.3), inset 0 0 10px rgba(0, 240, 255, 0.1);
+  border-color: rgba(176, 38, 255, 0.5);
+}
