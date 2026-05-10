@@ -11,7 +11,7 @@ export const CTASection: React.FC = () => {
       className="mt-12 w-full flex flex-col items-center"
     >
       <a 
-        href="https://t.me/yourgroup" 
+        href="https://t.me/pips_attendant" 
         target="_blank" 
         rel="noopener noreferrer"
         className="relative group w-full max-w-sm"
