@@ -14,7 +14,7 @@ export const links: LinkItem[] = [
     type: "broker",
     title: "Just Markets",
     description: "My preferred broker with tight spreads and fast execution.",
-    icon: "CandlestickChart",
+    icon: "/justmarkets.svg",
     url: "https://one.justmarkets.link/a/by21d0s1wd",
     highlight: true,
   },
@@ -23,7 +23,7 @@ export const links: LinkItem[] = [
     type: "broker",
     title: "XM Broker",
     description: "Reliable broker for seamless trading experience.",
-    icon: "CandlestickChart",
+    icon: "/xm.svg",
     url: "https://clicks.pipaffiliates.com/c?c=768946&l=en&p=1",
   },
   {
@@ -31,7 +31,7 @@ export const links: LinkItem[] = [
     type: "community",
     title: "VIP Forex Signals",
     description: "Message me for access to exclusive VIP setups.",
-    icon: "Send",
+    icon: "/telegram.svg",
     url: "https://t.me/pipsattendant",
   },
   {
@@ -39,14 +39,14 @@ export const links: LinkItem[] = [
     type: "social",
     title: "Telegram Community",
     description: "Join our free community for daily market updates.",
-    icon: "Send",
+    icon: "/telegram.svg",
     url: "https://t.me/pips_attendant",
   },
   {
     id: "l5",
     type: "social",
     title: "Instagram",
-    icon: "Instagram",
+    icon: "/instagram.svg",
     url: "https://www.instagram.com/pips_attendant?igsh=MXF4dW91dHV1N2o3eQ==",
   },
   {

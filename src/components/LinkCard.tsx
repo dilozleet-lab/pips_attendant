@@ -20,22 +20,33 @@ const iconMap: Record<string, React.ReactNode> = {
 };
 
 export const LinkCard: React.FC<{ link: LinkItem; delay: number }> = ({ link, delay }) => {
+  const renderIcon = () => {
+    if (link.icon.startsWith('/') || link.icon.startsWith('http')) {
+      return <img src={link.icon} alt="" className="w-6 h-6 object-contain" />;
+    }
+    return iconMap[link.icon] || <ExternalLink className="w-6 h-6" />;
+  };
+
   return (
     <motion.a
       href={link.url}
       target="_blank"
       rel="noopener noreferrer"
-      initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0 }}
+      initial={{ opacity: 0, x: -20 }}
+      animate={{ opacity: 1, x: 0 }}
       transition={{ duration: 0.5, delay }}
-      className={`relative w-full flex items-center p-4 rounded-2xl glass-card glow-hover transition-all duration-300 group
-        ${link.highlight ? 'bg-gradient-to-r from-neon-purple/20 to-neon-blue/10 border-neon-purple/50' : ''}
-      `}
+      whileHover={{ scale: 1.02, x: 5 }}
+      whileTap={{ scale: 0.98 }}
+      className={`relative group flex items-center p-4 rounded-xl border transition-all duration-300 w-full ${
+        link.highlight 
+          ? 'bg-gradient-to-r from-neon-purple/20 to-neon-blue/20 border-neon-purple/50 shadow-[0_0_20px_rgba(168,85,247,0.2)]' 
+          : 'bg-white/5 border-white/10 hover:bg-white/10 hover:border-white/20'
+      }`}
     >
-      <div className={`p-3 rounded-xl mr-4 flex-shrink-0 transition-colors duration-300
-        ${link.highlight ? 'bg-neon-purple/30 text-neon-blue' : 'bg-white/5 text-gray-300 group-hover:text-neon-purple group-hover:bg-white/10'}
-      `}>
-        {iconMap[link.icon] || <ExternalLink className="w-6 h-6" />}
+      <div className={`flex-shrink-0 w-12 h-12 rounded-lg flex items-center justify-center mr-4 ${
+        link.highlight ? 'bg-neon-purple/20' : 'bg-white/5'
+      }`}>
+        {renderIcon()}
       </div>
       
       <div className="flex-1 text-left">
