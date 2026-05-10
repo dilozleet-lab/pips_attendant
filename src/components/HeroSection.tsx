@@ -24,7 +24,7 @@ export const HeroSection: React.FC = () => {
         transition={{ duration: 0.6, delay: 0.2 }}
         className="text-4xl md:text-5xl font-bold mb-3 tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-white via-white to-gray-400"
       >
-        Pips_Attendant
+        Pips_attendant
       </motion.h1>
       
       <motion.p 

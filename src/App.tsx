@@ -33,7 +33,7 @@ function App() {
       
       {/* Footer */}
       <footer className="mt-16 pb-8 text-center text-sm text-gray-500 relative z-10">
-        <p>© {new Date().getFullYear()} Pips_Attendant. All rights reserved.</p>
+        <p>© {new Date().getFullYear()} Pips_attendant. All rights reserved.</p>
         <p className="mt-1 max-w-xs mx-auto text-xs opacity-60">Trading foreign exchange carries a high level of risk and may not be suitable for all investors.</p>
       </footer>
     </div>
