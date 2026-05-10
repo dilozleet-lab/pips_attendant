@@ -1,4 +1,3 @@
-import React from 'react';
 import { TickerBanner } from './components/TickerBanner';
 import { HeroSection } from './components/HeroSection';
 import { LinkCard } from './components/LinkCard';

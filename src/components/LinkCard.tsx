@@ -1,23 +1,22 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 import { 
-  CandlestickChart, 
-  LineChart, 
+  ChartCandlestick, 
+  ChartLine, 
   Send, 
-  Instagram, 
-  Youtube, 
-  Twitter,
+  Camera, 
+  Play, 
+  Bird,
   ExternalLink
 } from 'lucide-react';
-import { LinkItem } from '../config/links';
+import type { LinkItem } from '../config/links';
 
 const iconMap: Record<string, React.ReactNode> = {
-  CandlestickChart: <CandlestickChart className="w-6 h-6" />,
-  LineChart: <LineChart className="w-6 h-6" />,
+  CandlestickChart: <ChartCandlestick className="w-6 h-6" />,
+  LineChart: <ChartLine className="w-6 h-6" />,
   Send: <Send className="w-6 h-6" />,
-  Instagram: <Instagram className="w-6 h-6" />,
-  Youtube: <Youtube className="w-6 h-6" />,
-  Twitter: <Twitter className="w-6 h-6" />,
+  Instagram: <Camera className="w-6 h-6" />,
+  Youtube: <Play className="w-6 h-6" />,
+  Twitter: <Bird className="w-6 h-6" />,
 };
 
 export const LinkCard: React.FC<{ link: LinkItem; delay: number }> = ({ link, delay }) => {
