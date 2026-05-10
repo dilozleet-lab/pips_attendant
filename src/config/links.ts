@@ -53,7 +53,7 @@ export const links: LinkItem[] = [
     id: "l6",
     type: "social",
     title: "YouTube Channel",
-    icon: "Youtube",
+    icon: "/youtube.jpg",
     url: "https://www.youtube.com/@pipsattendant",
   }
 ];
