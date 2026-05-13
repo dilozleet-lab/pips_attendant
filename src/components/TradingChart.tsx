@@ -15,7 +15,7 @@ export const TradingChart: React.FC = () => {
     script.async = true;
     script.innerHTML = JSON.stringify({
       "autosize": true,
-      "symbol": "FX:EURUSD",
+      "symbol": "OANDA:XAUUSD",
       "interval": "D",
       "timezone": "Etc/UTC",
       "theme": "dark",
