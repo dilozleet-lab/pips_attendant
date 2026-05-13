@@ -21,14 +21,14 @@ function App() {
       <main className="relative z-10 max-w-2xl mx-auto px-4 pt-16 sm:px-6 lg:px-8 flex flex-col items-center">
         <HeroSection />
         
-        <TradingChart />
-        
         <div className="w-full flex flex-col gap-4 mt-2">
           {links.map((link, index) => (
             <LinkCard key={link.id} link={link} delay={0.5 + (index * 0.1)} />
           ))}
         </div>
 
+        <TradingChart />
+        
         <CTASection />
       </main>
 
