@@ -3,6 +3,7 @@ import { HeroSection } from './components/HeroSection';
 import { LinkCard } from './components/LinkCard';
 import { FloatingContact } from './components/FloatingContact';
 import { CTASection } from './components/CTASection';
+import { TradingChart } from './components/TradingChart';
 import { links } from './config/links';
 import './index.css';
 
@@ -19,6 +20,8 @@ function App() {
       
       <main className="relative z-10 max-w-2xl mx-auto px-4 pt-16 sm:px-6 lg:px-8 flex flex-col items-center">
         <HeroSection />
+        
+        <TradingChart />
         
         <div className="w-full flex flex-col gap-4 mt-2">
           {links.map((link, index) => (
